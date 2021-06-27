@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refactor</title>
+    <link
+      rel="SHORTCUT ICON"
+      href="https://c.s-microsoft.com/favicon.ico?v2"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="refactor-styles.css" />
+  </head>
+  <body>
+    <!-- ============================================== Nav Bar ============================================== -->
+    <nav>
+      <div class="container-xl">
+        <section
+          id="main-nav"
+          class="navbar navbar-expand-lg navbar-light bg-light"
+        >
+          <div class="container-fluid">
+            <!-- logo -->
+            <div class="nav-logo">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                  alt="logo"
+                />
+              </a>
+            </div>
+
+            <!-- toggle button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 被toggle起来的nav link -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- normal links-->
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Microsoft 365</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Office</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Windows</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Surface</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Xbox</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Sale</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Support</span></a>
+                </li>
+              </ul>
+              <!-- drop down links -->
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    ><span>All Microsoft</span></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!-- search -->
+            <div class="nav-icon">
+              <a class="nav-link" href="#">
+                <span>Search</span><i class="fas fa-search ms-1"></i>
+              </a>
+            </div>
+
+            <!-- cart and sign in -->
+            <div class="nav-cart-signin d-flex">
+              <div class="nav-icon">
+                <a class="nav-link" href="#">
+                  <span>Cart</span><i class="fas fa-shopping-cart ms-1"></i>
+                </a>
+              </div>
+              <div class="nav-icon">
+                <a class="nav-link" href="#">
+                  <span>Sign In</span><i class="far fa-user-circle ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <!-- ============================================== Main Content ============================================== -->
+    <main>
+      <!-- ********************************** Carousel ********************************** -->
+      <section id="main-carousel">
+        <div class="container-lg">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <!--  Indicators of carousel -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <!--  Inner conten of carousel -->
+            <div class="carousel-inner">
+              <!--  Carousel item1  -->
+              <div class="carousel-item active">
+                <div class="carousel-item1-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWDRXs?ver=d821&amp;q=0&amp;m=8&amp;h=303&amp;w=539&amp;b=%23FFFFFFFF&amp;l=f&amp;x=1127&amp;y=917&amp;s=771&amp;d=433&amp;aim=true"
+                    class="d-block"
+                    alt="carousel-image-1"
+                  />
+                </div>
+                <div class="carousel-item1-content">
+                  <h2>Up to 20%</h2>
+                  <div class="carousel-item1-text">
+                    Stand out from the ordinary and save on select Surface
+                    devices.
+                  </div>
+                  <button
+                    type="button"
+                    class="button-black btn btn-dark fw-bold"
+                  >
+                    <span>Shop Now</span> &#10095;
+                  </button>
+                </div>
+              </div>
+              <!--  Carousel item2  -->
+              <div class="carousel-item">
+                <div class="carousel-item2-img ms-auto">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DRie?ver=3184&amp;q=0&amp;m=8&amp;h=303&amp;w=539&amp;b=%23FFFFFFFF&amp;l=f&amp;x=1129&amp;y=917&amp;s=767&amp;d=431&amp;aim=true%22%20media=%22(max-width:539px)"
+                    class="d-block h-100"
+                    alt="carousel-image-2"
+                  />
+                </div>
+                <div class="carousel-item2-content">
+                  <div><h2>Microsoft 365</h2></div>
+                  <div class="carousel-item2-text">
+                    Premium Office apps, extra cloud storage, advanced security,
+                    and more - all in one convienient subscription
+                  </div>
+                  <button
+                    type="button"
+                    class="button-black btn btn-dark fw-bold"
+                  >
+                    <span>For up to 6 people</span> &#10095;
+                  </button>
+                  <button
+                    type="button"
+                    class="button-clear btn btn-light fw-bold"
+                  >
+                    <span>For 1 person</span> &#10095;
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--  Previous buttons of carousel -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon me-5"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!--  Next buttons of carousel -->
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon ms-5"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********************************** Shop Icon ********************************** -->
+      <section id="main-shop-icon">
+        <div class="container">
+          <!-- shop icons grid -->
+          <div class="row text-center">
+            <!-- shop icon item1 -->
+            <div class="col shop-icon-item">
+              <a href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4sQDc?ver=30c2&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                  alt="icon"
+                />
+                <div class="shop-item-description">
+                  Choose your Microsoft 365
+                </div>
+              </a>
+            </div>
+            <!-- shop icon item2 -->
+            <div class="col shop-icon-item">
+              <a href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pndL?ver=5217&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                  alt="icon"
+                />
+                <div class="shop-item-description">Shop Surface devices</div>
+              </a>
+            </div>
+            <!-- shop icon item3 -->
+            <div class="col shop-icon-item">
+              <a href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pxBu?ver=eae5&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                  alt="icon"
+                />
+                <div class="shop-item-description">
+                  Buy Xbox games and consoles
+                </div>
+              </a>
+            </div>
+            <!-- shop icon item4 -->
+            <div class="col shop-icon-item">
+              <a href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pkvE?ver=d8fc&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                  alt="icon"
+                />
+                <div class="shop-item-description">Shop Windows 10</div>
+              </a>
+            </div>
+            <!-- shop icon item5 -->
+            <div class="col shop-icon-item">
+              <a href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rriw?ver=b2d5&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                  alt="icon"
+                />
+                <div class="shop-item-description">Shop Business</div>
+              </a>
+            </div>
+            <!-- shop icon item6 -->
+            <div class="col shop-icon-item">
+              <a href="#">
+                <img
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4CL19?ver=2af2&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                  alt="icon"
+                />
+                <div class="shop-item-description">Shop for Students</div>
+              </a>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+      
+      <!-- ********************************** Sales ********************************** -->
+      <section id="main-sales">
+        <div class="container">
+          <div class="row">
+            <!-- shop item1 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4qP8j?ver=9637&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Save 20%</h5>
+                    Surface Pro 7 features a laptop-class Intel® Core™
+                    processor, improved battery and graphics, and more
+                    multitasking connections.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- shop item2 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4FTtq?ver=dae2&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Surface Laptop Go</h5>
+                    Make the most of every day with the sleek style and
+                    performance of our lightest Surface laptop.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- shop item3 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4GMgj?ver=bbbd&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Xbox Series S</h5>
+                    Next-gen performance in the smallest Xbox ever.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- shop item4 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWDhA6?ver=d8db&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Microsoft Teams</h5>
+                    Chat, call and make plans with family and friends – all in
+                    one app.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********************************** Banner ********************************** -->
+      <section id="main-banner">
+        <div class="container-lg">
+          <div class="banner-container">
+            <div class="banner-img">
+              <img
+                src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4D5uF?ver=204a&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=200&s=2120&d=795&aim=true"
+                alt="banner"
+              />
+              <div class="banner-content">
+                <div><h2>Never miss a beat</h2></div>
+                <div class="banner-content-text">
+                  Discover the latest audio from Surface, featuring
+                  ultra-comfortable design, immersive sound and all-day battery
+                </div>
+                <button
+                  type="button"
+                  class="banner-content-btn button-black btn btn-dark fw-bold"
+                >
+                  <span>Shop Surface Earbuds</span> &#10095;
+                </button>
+                <button
+                  type="button"
+                  class="banner-content-btn button-clear btn btn-light fw-bold"
+                >
+                  <span>Shop Surface Headphones 2</span> &#10095;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********************************** Business ********************************** -->
+      <section id="main-business">
+        <div class="container">
+          <h4>For business</h4>
+          <div class="row">
+            <!-- business item1 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWEmIo?ver=662b&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Save up to 10%</h5>
+                    Great savings on select Surface Pro 7 + for Business.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- business item2 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rT?ver=2072&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Microsoft 365 for business</h5>
+                    Stay a step ahead with powerful apps for productivity,
+                    connection and security.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- business item3 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1CmIw?ver=e555&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>Windows 10 Enterprise</h5>
+                    Download the free 90-day evaluation for IT professionals.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Download now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- business item4 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 sales-item">
+              <a href="#">
+                <div class="sales-item-img">
+                  <img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWBmSK?ver=c9e8&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+                    alt="image"
+                  />
+                </div>
+                <div class="sales-item-description">
+                  <div class="sales-item-description-text">
+                    <h5>HoloLens 2 devices</h5>
+                    Develop a new reality for your business.
+                  </div>
+                  <div class="sales-item-description-link">
+                    <span>Shop now</span> &#10095;
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********************************** SNS ********************************** -->
+      <section id="main-sns">
+        <div class="container">
+          <span>Follow Microsoft</span>
+          <a href="#">
+            <img
+              src="https://www.microsoft.com/onerfstatics/marketingsites-wcus-prod/_h/85288795/coreui.statics/images/social/facebook.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://www.microsoft.com/onerfstatics/marketingsites-wcus-prod/_h/93690392/coreui.statics/images/social/twitter.png"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================== Footer ============================================== -->
+    <footer>
+      <div class="container-xl">
+        <div class="container-fluid">
+          <!-- Footer Part1: All Links -->
+          <div class="row footer-part1">
+            <!-- What's new -->
+            <div class="col-lg-2 col-md-4 col-sm-12">
+              <div class="d-flex flex-column footer-item-list">
+                <div><strong>What's new</strong></div>
+                <div><a href="#">Surface Laptop 4</a></div>
+                <div><a href="#">Surface Laptop Go</a></div>
+                <div><a href="#">Surface Go 2</a></div>
+                <div><a href="#">Surface Pro X</a></div>
+                <div><a href="#">Surface Book 3</a></div>
+                <div><a href="#">Microsoft 365</a></div>
+                <div><a href="#">Windows 10 apps</a></div>
+                <div><a href="#">HoloLens 2</a></div>
+              </div>
+            </div>
+            <!-- Microsoft Store -->
+            <div class="col-lg-2 col-md-4 col-sm-12">
+              <div class="d-flex flex-column footer-item-list">
+                <div><strong>Microsoft Store</strong></div>
+                <div><a href="#">Account profile</a></div>
+                <div><a href="#">Download Center</a></div>
+                <div><a href="#">Microsoft Store Support</a></div>
+                <div><a href="#">Returns</a></div>
+                <div><a href="#">Order tracking</a></div>
+                <div><a href="#">Microsoft Store Promise</a></div>
+              </div>
+            </div>
+            <!-- Education -->
+            <div class="col-lg-2 col-md-4 col-sm-12">
+              <div class="d-flex flex-column footer-item-list">
+                <div><strong>Education</strong></div>
+                <div><a href="#">Microsoft in education</a></div>
+                <div><a href="#">Office for students</a></div>
+                <div><a href="#">Office 365 for schools</a></div>
+                <div><a href="#">Deals for students & parents</a></div>
+              </div>
+            </div>
+            <!-- Enterprise -->
+            <div class="col-lg-2 col-md-4 col-sm-12">
+              <div class="d-flex flex-column footer-item-list">
+                <div><strong>Enterprise</strong></div>
+                <div><a href="#">Microsoft Azure</a></div>
+                <div><a href="#">Microsoft Industry</a></div>
+                <div><a href="#">Microsoft partner resources</a></div>
+                <div><a href="#">Financial services</a></div>
+              </div>
+            </div>
+            <!-- Developer -->
+            <div class="col-lg-2 col-md-4 col-sm-12">
+              <div class="d-flex flex-column footer-item-list">
+                <div><strong>Developer</strong></div>
+                <div><a href="#">Microsoft Visual Studio</a></div>
+                <div><a href="#">Developer Center</a></div>
+                <div><a href="#">Channel 9</a></div>
+                <div><a href="#">Microsoft 365 Dev Center</a></div>
+                <div><a href="#">Microsoft 365 Developer Program</a></div>
+              </div>
+            </div>
+            <!-- Company -->
+            <div class="col-lg-2 col-md-4 col-sm-12">
+              <div class="d-flex flex-column footer-item-list">
+                <div><strong>Company</strong></div>
+                <div><a href="#">Careers</a></div>
+                <div><a href="#">Company news</a></div>
+                <div><a href="#">Privacy at Microsoft</a></div>
+                <div><a href="#">Investors</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Part2: Language & Contacts -->
+          <div class="row footer-part2">
+            <!-- Language -->
+            <div class="col-lg-3">
+              <a href="#"
+                ><i class="fas fa-globe-asia"></i
+                ><span class="px-2">English(New Zealand)</span></a
+              >
+            </div>
+            <!-- Contacts with flexbox-->
+            <div class="col-lg-auto ms-auto d-flex flex-row flex-wrap">
+              <div><a href="#">Contact Microsoft</a></div>
+              <div><a href="#">Privacy</a></div>
+              <div><a href="#">Terms of use</a></div>
+              <div><a href="#">Trademarks</a></div>
+              <div><a href="#">About our ads</a></div>
+              <div><span>© Microsoft 2021</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================== Scripts ============================================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f231c97fc0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

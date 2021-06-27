@@ -1,0 +1,409 @@
+/* .container {
+  border: 1px dashed red;
+}
+
+.container-md {
+  border: 1px dashed blue;
+} */
+
+/* div {
+  border: 1px dashed gray;
+} */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #000;
+}
+
+/*********************************** Common Class ***********************************/
+.button-black {
+  border-radius: 0;
+  border: none;
+}
+
+.button-black span {
+  margin: 0 10px;
+}
+
+.button-black span:hover {
+  border-bottom: 2px solid white;
+  padding-right: 3px;
+}
+
+.button-clear {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.button-clear:hover {
+  background-color: transparent;
+}
+
+.button-clear span {
+  margin: 0 10px;
+}
+
+.button-clear span:hover {
+  border-bottom: 2px solid black;
+  padding-right: 3px;
+}
+
+/*********************************** Nav Bar ***********************************/
+#main-nav .container-fluid{
+  padding: 0;
+}
+
+.nav-link span{
+  color: #000;
+  font-size: 13px;
+}
+
+.nav-link span:hover {
+  border-bottom: 3px solid #000;
+ } 
+
+.nav-logo img {
+  height: 23px;
+  margin-top: -8px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.nav-icon i{
+  color: #000;
+}
+/*********************************** Carousel ***********************************/
+#main-carousel {
+  margin-bottom: 40px;
+}
+
+#main-carousel .container-lg {
+  padding: 0;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-item {
+  height: 100%;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.carousel-item1-img {
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.carousel-item1-img img {
+  width: auto;
+  height: 100%;
+}
+
+.carousel-item1-content {
+  position: absolute;
+  bottom: 35%;
+  right: 7%;
+}
+
+.carousel-item1-content .button-black {
+  width: 150px;
+}
+
+.carousel-item1-text {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.carousel-item2-img {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.carousel-item2-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item2-content {
+  position: absolute;
+  top: 30%;
+  left: 9%;
+}
+
+.carousel-item2-content .button-black {
+  width: 200px;
+}
+
+.carousel-item2-text {
+  width: 400px;
+  margin: 20px 0;
+}
+
+/*********************************** Shop Icon ***********************************/
+#main-shop-icon {
+  margin: 80px 0 60px;
+}
+
+.shop-icon-item {
+  width: 16.7%;
+}
+
+.shop-item-description{
+  color: #000;
+  font-weight: 500;
+}
+
+/*********************************** Sales ***********************************/
+.sales-item {
+  margin-bottom: 40px;
+}
+
+.sales-item-img img {
+  width: 100%;
+}
+
+.sales-item-description {
+  margin-top: 37px;
+  padding-right: 12px;
+}
+
+.sales-item-description-text {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.sales-item-description-link {
+  font-weight: 600;
+  color: #0067b8;
+}
+
+.sales-item-description-link span:hover {
+  border-bottom: 3px solid #0067b8;
+  padding-right: 3px;
+}
+
+/*********************************** Banner ***********************************/
+#main-banner {
+  margin-bottom: 40px;
+}
+
+#main-banner .container-lg {
+  padding: 0;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-content {
+  width: 400px;
+  position: absolute;
+  top: 30%;
+  left: 7%;
+}
+
+.banner-content-text {
+  margin-bottom: 20px;
+}
+
+.banner-content-btn {
+  margin-bottom: 10px;
+}
+
+#main-banner .button-black {
+  width: 250px;
+}
+
+/*********************************** Business ***********************************/
+
+/*********************************** SNS ***********************************/
+#main-sns {
+  margin: 0 auto 40px;
+}
+
+#main-sns span {
+  color: gray;
+  padding-right: 10px;
+}
+
+#main-sns a {
+  padding-right: 10px;
+}
+
+/*********************************** Footer ***********************************/
+footer {
+  background-color: #f2f2f2;
+  font-size: 11px;
+  color: #666666;
+  padding: 20px 0;
+}
+
+footer a {
+  font-size: 11px;
+  color: #666666;
+}
+
+footer a:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+
+footer strong {
+  color: #666666;
+}
+
+.footer-item-list {
+  margin-bottom: 20px;
+}
+
+.footer-item-list div {
+  margin-bottom: 10px;
+}
+
+.footer-part2 a {
+  margin-right: 10px;
+}
+
+/*********************************** Media <992px ***********************************/
+@media screen and (max-width: 992px) {
+  /* ====== banner ====== */
+  .banner-img img {
+    height: 500px;
+  }
+
+  /* ====== nav bar ====== */
+  .nav-icon span{
+    display:none
+  }
+}
+
+/*********************************** Media <768px ***********************************/
+@media screen and (max-width: 768px) {
+  /* ====== banner ====== */
+  .banner-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-content {
+    position: static;
+    width: 100%;
+    padding: 20px 20px 40px;
+    text-align: center;
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  .banner-img {
+    position: static;
+  }
+
+  .banner-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ====== carousel ====== */
+  .carousel-inner {
+    height: 85vw;
+  }
+
+  .carousel-item1-img {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item1-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item {
+    position: static;
+  }
+
+  .carousel-item1-content {
+    position: static;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .carousel-item1-text {
+    margin: 0 auto;
+  }
+
+  .carousel-item2-img {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item2-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item2-content {
+    position: static;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .carousel-item2-text {
+    margin: 0 auto;
+  }
+
+}
+
+/*********************************** Media <576px ***********************************/
+@media screen and (max-width: 576px) {
+  /* ====== banner ====== */
+  .banner-content-btn {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  /* ====== carousel ====== */
+  .carousel-inner {
+    height: 90vw;
+  }
+
+  .carousel-item1-img {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item2-img {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item2-text {
+    margin: 0 auto;
+  }
+
+  .carousel-item2-content button{
+    display: block;
+    margin: 5px auto 0;
+  }
+}
