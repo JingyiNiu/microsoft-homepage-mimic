@@ -53,18 +53,18 @@ body {
 }
 
 /*********************************** Nav Bar ***********************************/
-#main-nav .container-fluid{
+#main-nav .container-fluid {
   padding: 0;
 }
 
-.nav-link span{
+.nav-link span {
   color: #000;
   font-size: 13px;
 }
 
 .nav-link span:hover {
   border-bottom: 3px solid #000;
- } 
+}
 
 .nav-logo img {
   height: 23px;
@@ -75,7 +75,7 @@ body {
   padding: 0;
 }
 
-.nav-icon i{
+.nav-icon i {
   color: #000;
 }
 /*********************************** Carousel ***********************************/
@@ -150,17 +150,34 @@ body {
 
 /*********************************** Shop Icon ***********************************/
 #main-shop-icon {
-  margin: 80px 0 60px;
+  margin: 60px 0;
+}
+
+.overflow-container {
+  max-width: 100%;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .shop-icon-item {
-  width: 16.7%;
+  vertical-align: top;
+  display: inline-block;
+  width: 170px;
+  height: 112px;
+  text-align: center;
 }
 
-.shop-item-description{
+.shop-icon-item p {
   color: #000;
+  font-size: 14px;
   font-weight: 500;
+  width: 130px;
+  margin: 6px auto;
+  white-space: normal;
 }
+
+
 
 /*********************************** Sales ***********************************/
 .sales-item {
@@ -270,7 +287,7 @@ footer strong {
 }
 
 .footer-item-list {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-item-list div {
@@ -289,8 +306,8 @@ footer strong {
   }
 
   /* ====== nav bar ====== */
-  .nav-icon span{
-    display:none
+  .nav-icon span {
+    display: none;
   }
 }
 
@@ -370,7 +387,6 @@ footer strong {
   .carousel-item2-text {
     margin: 0 auto;
   }
-
 }
 
 /*********************************** Media <576px ***********************************/
@@ -402,7 +418,7 @@ footer strong {
     margin: 0 auto;
   }
 
-  .carousel-item2-content button{
+  .carousel-item2-content button {
     display: block;
     margin: 5px auto 0;
   }
