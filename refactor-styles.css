@@ -53,7 +53,7 @@ body {
 }
 
 /*********************************** Nav Bar ***********************************/
-#main-nav{
+#main-nav {
   min-width: 400px;
 }
 #main-nav .container-fluid {
@@ -82,13 +82,40 @@ body {
   color: #000;
 }
 
-.dropdown-item {
-  font-size: 13px;
+.dropdown-menu {
+  margin-left: -600px;
+  border-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  background-color: #f2f2f2;
 }
 
-.dropdown-item:hover {
-  text-decoration: underline;
+.dropdown-list {
+  margin: 0 20px 20px;
+  font-size: 13px;
+  color: black;
 }
+
+.dropdown-list div {
+  margin: 8px;
+}
+
+.dropdown-list a {
+  color: #000;
+}
+
+.dropdown-list a:hover {
+  text-decoration: u;
+}
+
+.nav-item-hidden {
+  display: none;
+}
+
+.dd-inside-dd li {
+  font-size: 13px;
+  list-style: none;
+}
+
 /*********************************** Carousel ***********************************/
 #main-carousel {
   margin-bottom: 40px;
@@ -187,8 +214,6 @@ body {
   margin: 6px auto;
   white-space: normal;
 }
-
-
 
 /*********************************** Sales ***********************************/
 .sales-item {
@@ -323,6 +348,10 @@ footer strong {
 
   .drop-down-hidden {
     display: none;
+  }
+
+  .nav-item-hidden {
+    display: block;
   }
 }
 
