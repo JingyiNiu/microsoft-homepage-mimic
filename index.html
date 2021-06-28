@@ -19,6 +19,97 @@
     <link rel="stylesheet" href="refactor-styles.css" />
   </head>
   <body>
+    <div class="container-xl" id="click-to-toggle">
+      <div style="
+        width: 90%;
+        position: absolute;
+        border-bottom: 1px solid gray;
+        top:50px;
+        right:60px;
+        background-color: #F2F2F2;
+        z-index: 1000;">
+          <div class="row">
+            <!-- Software -->
+            <div class="d-flex flex-row flex-wrap col">
+              <div class="d-flex flex-column dropdown-list">
+                <div><strong>Software</strong></div>
+                <div><a href="#">Windows Apps</a></div>
+                <div><a href="#">OneDrive</a></div>
+                <div><a href="#">Outlook</a></div>
+                <div><a href="#">Skype</a></div>
+                <div><a href="#">OneNote</a></div>
+                <div><a href="#">Microsoft Teams</a></div>
+              </div>
+            </div>
+            <!-- PCs & Devices -->
+            <div class="d-flex flex-row flex-wrap col">
+              <div class="d-flex flex-column dropdown-list">
+                <div><strong>PCs & Devices</strong></div>
+                <div><a href="#">Shop Xbox</a></div>
+                <div><a href="#">Accessories</a></div>
+              </div>
+            </div>
+            <!-- Entertainment -->
+            <div class="d-flex flex-row flex-wrap col">
+              <div class="d-flex flex-column dropdown-list">
+                <div><strong>Entertainment</strong></div>
+                <div><a href="#">Xbox Game Pass Ultimate</a></div>
+                <div><a href="#">Xbox Live Gold</a></div>
+                <div><a href="#">Xbox games</a></div>
+                <div><a href="#">PC games</a></div>
+                <div><a href="#">Windows digital games</a></div>
+                <div><a href="#">Movies & TV</a></div>
+              </div>
+            </div>
+            <!-- Business -->
+            <div class="d-flex flex-row flex-wrap col">
+              <div class="d-flex flex-column dropdown-list">
+                <div><strong>Business</strong></div>
+                <div><a href="#">Microsoft Azure</a></div>
+                <div><a href="#">Microsoft Dynamics 365</a></div>
+                <div><a href="#">Microsoft 365</a></div>
+                <div><a href="#">Microsoft Industry</a></div>
+                <div><a href="#">Data platform</a></div>
+                <div><a href="#">Microsoft Advertising</a></div>
+                <div><a href="#">Power Platform</a></div>
+                <div><a href="#">Shop Business</a></div>
+              </div>
+            </div>
+            <!-- Developer & IT -->
+            <div class="d-flex flex-row flex-wrap col">
+              <div class="d-flex flex-column dropdown-list">
+                <div><strong>Developer & IT</strong></div>
+                <div><a href="#">.NET</a></div>
+                <div><a href="#">Visual Studio</a></div>
+                <div><a href="#">Windows Server</a></div>
+                <div><a href="#">Windows Dev Center</a></div>
+                <div><a href="#">Docs</a></div>
+                <div><a href="#">Power Apps</a></div>
+                <div><a href="#">HoloLens 2</a></div>
+              </div>
+            </div>
+            <!-- Other -->
+            <div class="d-flex flex-row flex-wrap col">
+              <div class="d-flex flex-column dropdown-list">
+                <div><strong>Other</strong></div>
+                <div><a href="#">Microsoft Rewards</a></div>
+                <div><a href="#">Free downloads & security</a></div>
+                <div><a href="#">Education</a></div>
+                <div><a href="#">Gift cards</a></div>
+                <div><a href="#">Licensing</a></div>
+              </div>
+            </div>
+          </div>
+          <div style="
+          background-color: #E6E6E6;
+          text-align: center;
+          padding: 10px 0;"
+          >
+          VIEW ALL >
+        </div>
+        </div>
+  </div>
+    
         <!-- ============================================== Nav Bar ============================================== -->
     <nav>
       <div class="container-xl">
@@ -57,6 +148,7 @@
             <!-- drop down links -->
             <div class="drop-down-hidden order-lg-2">
               <ul class="navbar-nav">
+                <!-- all microsoft -->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -141,6 +233,15 @@
                       </div>
                     </div>
                   </div>
+                </li>
+                <!-- toggle test -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    onclick="toggleTest()"
+                    ><span>TOGGLE</span></a
+                  >
                 </li>
               </ul>
             </div>
@@ -734,6 +835,16 @@
     </footer>
 
     <!-- ============================================== Scripts ============================================== -->
+    <script>
+      function toggleTest() {
+        var x = document.getElementById("click-to-toggle");
+  if (x.style.display != "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+      }
+      </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

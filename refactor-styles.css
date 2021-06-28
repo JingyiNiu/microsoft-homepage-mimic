@@ -18,6 +18,10 @@ body {
   color: #000;
 }
 
+#click-to-toggle{
+  display: none;
+}
+
 /*********************************** Common Class ***********************************/
 .button-black {
   border-radius: 0;
