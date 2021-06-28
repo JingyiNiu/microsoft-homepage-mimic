@@ -116,6 +116,10 @@ body {
   list-style: none;
 }
 
+.dd-inside-dd span:hover {
+border-bottom: 2px solid black;
+}
+
 /*********************************** Carousel ***********************************/
 #main-carousel {
   margin-bottom: 40px;
@@ -268,7 +272,7 @@ body {
 .banner-content {
   width: 400px;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 7%;
 }
 
@@ -277,7 +281,7 @@ body {
 }
 
 .banner-content-btn {
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 #main-banner .button-black {
@@ -408,7 +412,7 @@ footer strong {
   }
 
   .carousel-item1-text {
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   .carousel-item2-img {
@@ -429,7 +433,7 @@ footer strong {
   }
 
   .carousel-item2-text {
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 }
 
@@ -457,10 +461,6 @@ footer strong {
     height: 50%;
     width: 100%;
     overflow: hidden;
-  }
-
-  .carousel-item2-text {
-    margin: 0 auto;
   }
 
   .carousel-item2-content button {
