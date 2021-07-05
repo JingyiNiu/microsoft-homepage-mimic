@@ -6,6 +6,6 @@ It's fully responsive and created by pure HTML, CSS and BOOTSTRAP
 <img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.png" alt="index" width="70%">
 
 <div>
-<img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.pad.png" alt="index" width="40%">
-<img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.phone.png" alt="index"width="40%">
+<img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.pad.png" alt="index" width="50%" align="top">
+<img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.phone.png" alt="index"width="30%" align="top">
 </div>
