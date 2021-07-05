@@ -4,3 +4,7 @@ It's fully responsive and created by pure HTML, CSS and BOOTSTRAP
 
 ## Screenshots
 <img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.png" alt="index">
+
+<img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.pad.png" alt="index">
+
+<img src="https://github.com/JingyiNiu/microsoft-homepage-mimic/blob/master/screenshots/index.phone.png" alt="index">
